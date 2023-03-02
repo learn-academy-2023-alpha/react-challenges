@@ -1,0 +1,18 @@
+.dice {
+  border: 2px solid black;
+  display:flex ;
+  justify-content: space-around ;
+  height: 200px;
+  width: 200px;
+  margin:auto;
+}
+
+.rolls {
+  border: 2px solid black;
+  display:flex ;
+  justify-content: space-around ;
+  height: 200px;
+  width: 200px;
+  margin:auto;
+}
+
