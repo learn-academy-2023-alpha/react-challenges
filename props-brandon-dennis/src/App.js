@@ -5,23 +5,28 @@ import './App.css'
 const App = () => {
 
   // add main functionality
-  const diceSides = [1, 2, 3, 4, 5, 6]
-  const [rollLog, setRollLog] = useState()
+  // const diceSides = [1, 2, 3, 4, 5, 6]
+  const [rollLog, setRollLog] = useState([])
   const diceRoller = () => {
-      setRollLog(diceSides[Math.floor(Math.random() * diceSides.length)])
-      return rollLog
+  const array = rollLog
+  const randomNumber = Math.ceil(Math.random() * 6)
+  setRollLog(array.concat(randomNumber))
+    console.log(array)
   }
   return (
 <>
 <h1> Dice Roller Game </h1>
 <div className= "diceBox">
 <Rolls 
-rollLog={rollLog}
+
 diceRoller={diceRoller}
 />
+
 </div>
-<Rolls />
+<div className= "List-of-Random"> 
+<Rolls/>{rollLog} </div>
 </>
   )
-}
+  }
+
 export default App

@@ -1,8 +1,8 @@
 const Rolls = (props) => {
-    return (
-
+    return ( 
+        
 <>
-  <div Previous Rolls> {props.rollLog} </div> 
+  <div> {props.rollLog} </div> 
  <button onClick={props.diceRoller} style={{
     height: 5,
     width: 5,
@@ -10,6 +10,7 @@ const Rolls = (props) => {
 
 </>
     )
+    
 }
 
 export default Rolls
