@@ -3,9 +3,14 @@
 }
 
 .diceBox {
+  display:flex;
   border: solid 5px black;
   height: 500px;
   width: 500px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   
 }
 
@@ -16,7 +21,12 @@
 }
 
 .RollTracker {
+  display:flex;
   border: solid 5px black;
   height: 500px;
   width: 500px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
