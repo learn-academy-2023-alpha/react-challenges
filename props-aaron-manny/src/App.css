@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+.diceBox {
+  border: solid 5px black;
+  height: 500px;
+  width: 500px;
+  
+}
+
+.boxHolder {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.RollTracker {
+  border: solid 5px black;
+  height: 500px;
+  width: 500px;
+}
