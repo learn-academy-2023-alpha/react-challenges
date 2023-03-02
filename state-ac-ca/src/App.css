@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+}
+
+header {
+      background-color: black;
+      background-position: center;
+      align-items: center;
+}
+
+body {
+      background-image: url("./assets/diwali.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: black;
+}
+
+#flexxBoxx {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: space-evenly;
+}
+
+.whiteBox{
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 150px;
+      height: 50px;
+      background-color: white;    
+      align-items: center; 
+}
+
+.redBox{
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 150px;
+      height: 50px;
+      background-color: red;
+      align-items: center;
+}
+
+.magentaBox {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 150px;
+      height: 50px;
+      background-color: magenta; 
+      align-items: center;
+}
+
+.blueBox {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 150px;
+      height: 50px;
+      background-color: blue;   
+      align-items: center;
+}
+
+.yellowBox {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 150px;
+      height: 50px;
+      background-color: yellow;   
+      align-items: center;
+}
+
+h1 {
+      color: aqua;
+      background-color: black;
+      text-align: center;
+}
+
+h2 {
+      text-align: center;
+}
+
+footer {
+      color: white;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+}
