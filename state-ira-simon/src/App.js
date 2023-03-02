@@ -1,26 +1,48 @@
-// import React from 'react'
+import React from 'react'
 
-// function Box({ children, ...props }) {
-//   return <div {...props}>{children}</div>
+
+// class App extends React.Component{
+   
+//     render(){
+//        returns( 
+//        <div className="App">
+//         <h1> Welcome </h1>
+//         </div> 
+//     )
+//     }
 // }
 
-// export default function App() {
-//   return (
-//     <Box
-//       style={{
-//         backgroundColor: '#333',
-//         borderRadius: 0,
-//         borderStyle: solid, 
-//         color: '#eee',
-//         minHeight: 200,
-//         padding: 12,
-//         width: 300,
-//       }}
-//     >
+
+
+function App() {
+  return (
+    <div
+      style={{
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#FFFFFF",
+        border: "1px solid #000000",
+      }}
       
-//     </Box>
-//   )
-// }
+    >
+        white
+        </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -30,8 +52,16 @@
 // 📚 User Stories
 
 //     As a user, I can see a square box on the screen with a black border and a white background
+// (1) Completed
+
+
 //     As a user, I can see the default color name "white" inside the box
+// (2) Completed
+
+
 //     As a user, every time I click on the box the name of a different color appears
+
+
 //         Possible color names: red, orange, yellow, green, blue, purple, pink
 //     As a user, every time I click the box instead of the color name, I see the background color in the box change to represent the color.
 //     As a user, I can see many boxes on the page all acting independently of one another.
