@@ -23,4 +23,5 @@ component will track and keep a log of amount of times the dice is rolled. we ca
  -->
 🏔 Stretch Goals
 As a user, I can see the image of a dice face when I roll the dice.
+<!-- psuedocode: create a component that renders an image to represent the value rolled (rolls a one, shows the 1 pip dice image, 2 shows 2 pips, etc) -->
 As a user, I can click a restart button that clears my roll log.

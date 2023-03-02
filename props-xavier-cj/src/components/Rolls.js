@@ -2,7 +2,9 @@ import React from 'react'
 
 const Rolls = (props) => {
   return (
-    <div className = 'rolls'>{props.diceArray}</div>
+    <div className = 'rolls'>
+      <p>{props.rolls}</p>
+      </div>
   )
 }
 
