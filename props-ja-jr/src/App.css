@@ -1,0 +1,38 @@
+.app {
+  background: gray;
+  border: solid black;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  float:left;
+}
+
+.dice {
+  border: solid black;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+ .dice-roller{
+  border: solid black;
+  width: 85px;
+  height: 85px;
+  top: 33%;
+  left: 33%;
+  position: absolute;
+} 
+
+.all-rolls{
+  border: solid black;
+  height: 300px;
+  width: 300px;
+  float: left;
+  
+}
+
+.dice-roller:hover{
+  background-color: blueviolet; 
+}
