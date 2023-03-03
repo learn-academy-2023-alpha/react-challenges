@@ -1,0 +1,25 @@
+.dice {
+  display: flex;
+  justify-content: space-evenly;
+  border: 5px solid black;
+  height: 200px;
+  width: 200px;
+  padding: 40px;
+}
+.diceMini{
+  align-items: center;
+  border: 2px solid gray;
+  height: 40px;
+  width: 40px;
+}
+.rollLog {
+  display: flex;
+  justify-content: space-evenly;
+  border: 5px solid black;
+  height: 200px;
+  width: 200px;
+  padding: 40px;
+
+}
+
+
