@@ -4,8 +4,9 @@
 
 header {
       background-color: black;
-      background-position: center;
-      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 }
 
 body {
@@ -64,6 +65,15 @@ body {
       width: 150px;
       height: 50px;
       background-color: yellow;   
+      align-items: center;
+}
+
+.greenBox {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 150px;
+      height: 50px;
+      background-color: lime;   
       align-items: center;
 }
 
