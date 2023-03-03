@@ -1,24 +1,16 @@
-import React, { useState } from "react";
+// import react from  "react"
+// import App from "./App.js"
 
-
-const Box = () => {
-    const [currentColor, setCurrentColor] = useState("white")
-    const colors = [1, 2, 3, 4, 5, 6,]
-
-    const colorSelector = () => {
-        const randomNum = Math.floor(Math.random() * colors.length)
-        setCurrentColor(colors[randomNum])
-        console.log(colorSelector(randomNum))
-    }
-
+const Box = (props) => {
     return (
-        <>
-            <div className="color-box" style={{ backgroundColor: currentColor }} onClick={colorSelector}>
-                {}
-
-            </div>
-        </>
-    );
-}
-
-export default Box;
+    <>
+    <h2>Roll Log</h2>
+        <ul>
+          {props.rolls.map((roll, index) => (
+            <li key={index}>Roll {index + 1}: {roll}</li>
+          ))}
+        </ul>
+    
+     </>
+)}
+export default Box

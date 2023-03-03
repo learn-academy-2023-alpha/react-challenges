@@ -1,37 +1,27 @@
-import React, { useState } from "react";
-// This import is for us to establish our state
-import Box from "./component/Box";
-// importing our component
+import React, { useState } from 'react';
 import './App.css';
+import Box from './component/Box'
 
 const App = () => {
-  const [boxes, setBoxes] = useState([])
-  const addBox = () => {
-    setBoxes(boxes.concat(<Box />))
-  }
+  const [rolls, setRolls] = useState([]);
+  const [currentRoll, setCurrentRoll] = useState(null);
 
-
-  const subBox = () => {
-    setBoxes(boxes.slice(0, boxes.length - 1))
-  }
+  const rollDice = () => {
+    const roll = Math.floor(Math.random() * 6) + 1;
+    setCurrentRoll(roll);
+    setRolls([...rolls, roll]);
+  };
 
   return (
-    <>
-      <h1> Hello Office Hours ! </h1>
-      <Box />
-      <button onClick={addBox}> Click to add box</button>
-      <button onClick={subBox}> Take that box away</button>
-      <div className="color-boxes">
-        {boxes.map((box, index) => {
-          return (
-            <div key={index}>
-              {box}
-            </div>
-          )
-        })}
+    <div className="container">
+      <div className="box" onClick={rollDice}>
+        {currentRoll ? <p className="dice">{currentRoll}</p> : <p className="roll">Click to Roll</p>}
       </div>
-      <br />
-    </>
+      <div className="log">
+        <Box rolls={rolls} />
+    
+      </div>
+    </div>
   );
 }
 
