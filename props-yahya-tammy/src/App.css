@@ -1,0 +1,32 @@
+.dice {
+  border: 2px solid black;
+  background-color: clear;
+  width: 400px;
+  height: 400px;
+  padding: 30px;
+}
+
+
+.img1 {
+  background-image: url('https://github.com/learn-academy-2023-alpha/Syllabus/blob/main/react/assets/1-dice.png?raw=true');
+}
+
+.img2 {
+  background-image: url('https://github.com/learn-academy-2023-alpha/Syllabus/blob/main/react/assets/2-dice.png');
+}
+
+.img3 {
+  background-image: url('https://github.com/learn-academy-2023-alpha/Syllabus/blob/main/react/assets/3-dice.png');
+}
+
+.img4 {
+  background-image: url('https://github.com/learn-academy-2023-alpha/Syllabus/blob/main/react/assets/4-dice.png');
+}
+
+.img5 {
+  background-image: url('https://github.com/learn-academy-2023-alpha/Syllabus/blob/main/react/assets/5-dice.png');
+}
+
+.img6 {
+  background-image: url('https://github.com/learn-academy-2023-alpha/Syllabus/blob/main/react/assets/6-dice.png');
+}
