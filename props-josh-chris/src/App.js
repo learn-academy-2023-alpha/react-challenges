@@ -2,51 +2,53 @@ import React, {useState} from 'react'
 import Dice from './Components/Dice'
 import Rolls from './Components/Rolls'
 import './App.css'
+import die1 from './Assets/1dice.png'
+import die2 from './Assets/2dice.png'
+import die3 from './Assets/3dice.png'
+import die4 from './Assets/4dice.png'
+import die5 from './Assets/5dice.png'
+import die6 from './Assets/6dice.png'
 
 
 const App = () => {
 
     const [value, setValue] = useState('?')
     const [rollsList, setRollsList] = useState([""]) 
-    const [style, setStyle] = useState('die')
+    const [dieFace, setDieFace] = useState(die1)
     
     // function for creating a new roll 
     const newRoll = () => {
         // use a random number generator to create a value within the size of the die
-        console.log("newroll app");
         setValue(Math.ceil(Math.random() * 6))
         // pass the new value as a prop to results
         // addRoll(value)
         setRollsList([...rollsList, value])
-        switch (value){
-            case 1:
-                  setStyle("die1");
+        console.log("rolled: " + value)
+
+        switch (value) {
+            case "1":
+                  setDieFace(die1);
                   break;
             case 2:
-                  setStyle("die2");
+                  setDieFace(die2);
                   break;
             case 3:
-                  setStyle("die3");
+                  setDieFace(die3);
                   break;
             case 4:
-                  setStyle("die4");
+                  setDieFace(die4);
                   break;
             case 5:
-                  setStyle("die5");
+                  setDieFace(die5);
                   break;
             case 6:
-                  setStyle("die6");
+                  setDieFace(die6);
                   break;
             default:
+        }
       }
-    }
-
-    // const addRoll = (newRoll) => {
-        
-    // }
 
     const refresh = () => {
-        console.log("refresh app");
         setRollsList([])
     }
 
@@ -54,16 +56,15 @@ const App = () => {
         <div>
             <h1>Roll for Initative</h1>
 
-            <Dice 
+            <Dice
                 value={value}
-                style={style}
+                dieFace={dieFace}
                 newRoll={newRoll}
             />
             <Rolls 
                 rollsList={rollsList}
                 refresh={refresh}    
             />
-            
         </div>
     )
 }

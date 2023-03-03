@@ -16,7 +16,7 @@ const Dice = (props) => {
             
             <Die 
                 value={props.value}
-                style={props.style} 
+                dieFace={props.dieFace} 
                 newRoll={props.newRoll}    
             />
 
