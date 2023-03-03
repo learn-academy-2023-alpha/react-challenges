@@ -1,0 +1,15 @@
+* {
+  text-align: center;
+}
+
+
+.diceBox {
+  display: flex;
+  justify-content: center;
+  border: 5px solid black;
+  height: 100px;
+  width: 100px;
+  margin:auto
+}
+
+
