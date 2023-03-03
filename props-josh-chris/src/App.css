@@ -1,0 +1,104 @@
+/* all {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+} */
+div {
+    padding: 15px;
+}
+
+#dice {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.die {
+    display: flex;
+    border: 1px solid black; 
+    border-collapse: collapse;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#die1 {
+    display: flex;
+    border: 1px solid black; 
+    border-collapse: collapse;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    image: url(./Assets/1-dice.png);
+}
+
+#die2 {
+    display: flex;
+    border: 1px solid black; 
+    border-collapse: collapse;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Assets/2-dice.png);
+}
+
+#die3 {
+    display: flex;
+    border: 1px solid black; 
+    border-collapse: collapse;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Assets/3-dice.png);
+}
+
+#die4 {
+    display: flex;
+    border: 1px solid black; 
+    border-collapse: collapse;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Assets/4-dice.png);
+}
+
+#die5 {
+    display: flex;
+    border: 1px solid black; 
+    border-collapse: collapse;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Assets/5-dice.png);
+}
+
+#die6 {
+    display: flex;
+    border: 1px solid black; 
+    border-collapse: collapse;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Assets/6-dice.png);
+}
+
+#rolls {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+
+
+
