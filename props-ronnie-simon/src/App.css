@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  background-color: white;
+  cursor: pointer;
+}
+.dice {
+  font-size: 100px;
+  margin: 0;
+}
+.roll {
+  margin: 110;
+  font-size: 30px;
+}
+.log {
+  margin-left: 50px;
+  padding: 20px;
+  border: 2px solid black;
+  background-color: white;
+  width: 100px;
+  justify-content: center;
+}
+.log h2 {
+  margin-top: 0;
+}
+.log ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.log li {
+  margin-bottom: 10px;
+}
