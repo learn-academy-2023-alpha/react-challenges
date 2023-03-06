@@ -12,15 +12,17 @@ const App = () =>{
     setRolls(rolls.concat(diceNumber))
   }
   return (
-<> <h1> Look at this dice game, it works!</h1>
+<> 
+  <h1> Look at this dice game, it works!</h1>
     <Dice 
      diceNumber={diceNumber}
      diceNumberSetter={diceNumberSetter}
      />
+     <button onClick = {diceNumberSetter}>Roll!</button>
      <Rolls 
      rolls= {rolls}
      />
-    </>
+</>
   )
 }
 export default App;

@@ -1,18 +1,15 @@
 .dice {
   border: 2px solid black;
-  display:flex ;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-  width: 200px;
+  height: 225px;
+  width: 225px;
   margin: auto;
   float: left;
 }
 
 .rolls {
   border: 2px solid black;
-  height: 200px;
-  width: 200px;
+  height: 225px;
+  width: 225px;
   margin: auto;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -27,6 +24,38 @@
 
 .img-1 {
   background-image: url(https://raw.githubusercontent.com/learn-academy-2023-alpha/Syllabus/main/react/assets/1-dice.png);
+  height: 225px;
+  width: 225px;
+}
+
+.img-2{
+  background-image: url(https://raw.githubusercontent.com/learn-academy-2023-alpha/Syllabus/main/react/assets/2-dice.png);
+  height: 225px;
+  width: 225px;
+}
+
+.img-3{
+  background-image: url(https://raw.githubusercontent.com/learn-academy-2023-alpha/Syllabus/main/react/assets/3-dice.png);
+  height: 225px;
+  width: 225px;
+}
+
+.img-4{
+  background-image: url(https://raw.githubusercontent.com/learn-academy-2023-alpha/Syllabus/main/react/assets/4-dice.png);
+  height: 225px;
+  width: 225px;
+}
+
+.img-5{
+  background-image: url(https://raw.githubusercontent.com/learn-academy-2023-alpha/Syllabus/main/react/assets/5-dice.png);
+  height: 225px;
+  width: 225px;
+}
+
+.img-6{
+  background-image: url(https://raw.githubusercontent.com/learn-academy-2023-alpha/Syllabus/main/react/assets/6-dice.png);
+  height: 225px;
+  width: 225px;
 }
 /* .rolls-data{
   padding: 10px;
