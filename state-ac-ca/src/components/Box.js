@@ -2,13 +2,13 @@ import React, {useState} from "react"
 
 const Box = () => {
 // Create a global variable with an array of colors represented by strings or hexadecimal values
-      const colorsArray = ["red", "yellow", "magenta", "blue"]
+      const colorsArray = ["red", "yellow", "magenta", "blue", "green"]
       const [color, setColor] = useState("white")
       const [bgColor, setBGColor] = useState(color)
       const [style, setStyle] = useState("whiteBox")
 
       const changeColor = (event) => {
-            setColor(colorsArray[Math.round(Math.random() * (colorsArray.length - 1))])
+            setColor(colorsArray[Math.floor(Math.random() * (colorsArray.length))])
             {event.stopPropagation()}
       }
 
@@ -30,6 +30,9 @@ const Box = () => {
                         break;
                   case "magenta":
                         setStyle("magentaBox");
+                        break;
+                  case "green":
+                        setStyle("greenBox");
                         break;
                   default:
                         console.log("Error");

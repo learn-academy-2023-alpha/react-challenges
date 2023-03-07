@@ -27,18 +27,30 @@ import './App.css'
 import Box from "./components/Box"
 
 const App = () => {
-      
+      // Create variable for all of the box objects
+      // This variable is an array of Box components, each with independent states
+      const [theBoxes, setBoxes] = useState([])
+
+      // Function for adding a box
+      // The function deconstructs the array of existing Box components and adds those elements with an additional Box component the new array
+      const addBox = () => {
+            setBoxes([...theBoxes, <Box />])
+      }
+
+      // Function for removing a box
+      // The function filters the array of existing Box components to elements with indexes less than the index of the final element in the array (.length - 1 is the index of the final element)
+      const removeBox = () => {
+            setBoxes(theBoxes.filter((value, index) => index < theBoxes.length - 1))
+      }
+
       return (<>
       
       {/* Create a header division flexbox*/}
       <header>
             <h1>Diwali Color Bomb</h1>
-            <div>
-                  <button>Add Box</button>
-                  <button>Remove Box</button>
-            </div>
+            <button onClick={addBox}>Add Box</button>
+            <button onClick={removeBox}>Remove Box</button>
       </header>
-
 
       {/* Create a body division flexbox*/}
             {/* Create a division for a single button
@@ -47,9 +59,7 @@ const App = () => {
             Place a h2 object in the division that reads the state from the useState
                   onClick - randomize the index and set the text to show the useState value*/}
       <div id="flexxBoxx">
-                  <Box />
-                  <Box />
-                  <Box />
+            {theBoxes}
       </div>
 
       {/* Create a footer division */}
